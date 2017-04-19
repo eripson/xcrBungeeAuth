@@ -1,0 +1,4 @@
+name: xcrBungeeAuth
+main: pl.xcrafters.xcrbungeeauth.AuthPlugin
+version: 1.0
+author: defabricated

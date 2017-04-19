@@ -1,0 +1,9 @@
+config:
+    sessions-enabled: true
+    sessions-time: 00:60:00
+    auth-server: auth
+    mysql:
+        host: ""
+        base: ""
+        user: ""
+        pass: ""
