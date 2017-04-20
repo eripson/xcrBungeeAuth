@@ -1,9 +1,12 @@
 config:
+    online-mode: OFFLINE
     sessions-enabled: true
     sessions-time: 00:60:00
     auth-server: auth
     mysql:
-        host: ""
-        base: ""
-        user: ""
-        pass: ""
+      host: ""
+      base: ""
+      user: ""
+      pass: ""
+    redis:
+      host: ""
