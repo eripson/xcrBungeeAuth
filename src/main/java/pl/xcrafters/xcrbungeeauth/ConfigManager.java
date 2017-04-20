@@ -33,8 +33,6 @@ public class ConfigManager {
     public boolean sessionsEnabled;
     public Long sessionsTime;
     
-    public int allowedMultiAccounts;
-    
     public ServerInfo authServer;
 
     public void load(){
@@ -58,8 +56,6 @@ public class ConfigManager {
         sessionsTime = plugin.parseTimeSpan(config.getString("config.sessions-time"));
         
         authServer = ProxyServer.getInstance().getServerInfo(config.getString("config.auth-server"));
-        
-        allowedMultiAccounts = config.getInt("config.allowed-multiaccounts");
     }
     
     public void save(){
