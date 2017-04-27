@@ -158,7 +158,7 @@ public class AuthPlugin extends Plugin {
     
     public OnlineType hasPaid(String nick){
         try {
-            URL url = new URL("https://minecraft.net/haspaid.jsp?user=" + nick);
+            URL url = new URL("https://api.mojang.com/users/profiles/minecraft/" + nick);
             BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
             String hasPaid;
             while ((hasPaid = in.readLine()) != null) {
